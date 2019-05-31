@@ -11,4 +11,8 @@ package tasohyppelymalli;
  */
 public class Maapala extends Hahmo {
     
+    
+    public Maapala() {
+        super("Maapala.png");
+    }
 }
