@@ -11,6 +11,11 @@ import javax.swing.JFrame;
  *
  * @author Cherubi
  */
-public class HyppelyIkkuna extends JFrame {
+public class HyppelyIkkuna extends JFrame implements Runnable {
     
+    
+    @Override
+    public void run() {
+        
+    }
 }
