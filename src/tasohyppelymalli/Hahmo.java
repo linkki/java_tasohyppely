@@ -10,5 +10,10 @@ package tasohyppelymalli;
  * @author Cherubi
  */
 public class Hahmo {
+    public int leveys, korkeus;
     
+    public Hahmo() {
+        this.leveys = 50;
+        this.korkeus = 50;
+    }
 }
