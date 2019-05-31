@@ -5,6 +5,7 @@
  */
 package tasohyppelymalli;
 
+import java.awt.Color;
 import javax.swing.JPanel;
 
 /**
@@ -16,6 +17,7 @@ public class Pelialue extends JPanel {
     
     public Pelialue() {
         this.setLayout(null);
+        this.setBackground(new Color(120, 180, 250));
     }
     
 }
