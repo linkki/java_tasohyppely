@@ -12,7 +12,7 @@ import javax.swing.JFrame;
  * @author Cherubi
  */
 public class HyppelyIkkuna extends JFrame implements Runnable {
-    
+    private Pelialue pelialue;
     
     @Override
     public void run() {
@@ -20,5 +20,8 @@ public class HyppelyIkkuna extends JFrame implements Runnable {
         this.setSize(400, 300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
+        
+        this.pelialue = new Pelialue();
+        this.add(pelialue);
     }
 }
