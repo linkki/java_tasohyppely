@@ -16,6 +16,9 @@ public class HyppelyIkkuna extends JFrame implements Runnable {
     
     @Override
     public void run() {
-        
+        this.setTitle("Hyppelypeli");
+        this.setSize(400, 300);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
     }
 }
