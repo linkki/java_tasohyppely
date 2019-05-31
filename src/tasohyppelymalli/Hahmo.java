@@ -5,15 +5,17 @@
  */
 package tasohyppelymalli;
 
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
+import javax.swing.JPanel;
 
 /**
  *
  * @author Cherubi
  */
-public class Hahmo {
+public class Hahmo extends JPanel {
     public BufferedImage kuva;
     public int leveys, korkeus;
     
@@ -27,5 +29,10 @@ public class Hahmo {
             System.out.println("Kuvan " + kuvanimi + " avaaminen ei onnistunut.");
             e.printStackTrace();
         }
+    }
+    
+    @Override
+    public void paintComponent(Graphics g) {
+        g.drawImage(kuva, 0, 0, leveys, korkeus, this);
     }
 }
