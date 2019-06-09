@@ -24,4 +24,7 @@ public class Pelialue extends JPanel {
         this.hahmolista = new HashMap<Hahmo, Point>();
     }
     
+    private void alustaKentta() {
+        
+    }
 }
