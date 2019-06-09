@@ -6,6 +6,7 @@
 package tasohyppelymalli;
 
 import javax.swing.JFrame;
+import javax.swing.Timer;
 
 /**
  *
@@ -23,5 +24,9 @@ public class HyppelyIkkuna extends JFrame implements Runnable {
         
         this.pelialue = new Pelialue();
         this.add(pelialue);
+        
+        Timer ajastin = new Timer(50, this.pelialue);
+        ajastin.setRepeats(true);
+        ajastin.start();
     }
 }
