@@ -6,6 +6,7 @@
 package tasohyppelymalli;
 
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Point;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -52,6 +53,16 @@ public class Pelialue extends JPanel {
             
             y += 50; //hahmojen korkeus
             x = 0;
+        }
+    }
+    
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        for (Hahmo hahmo : hahmolista.keySet()) {
+            Point paikka = hahmolista.get(hahmo);
+            hahmo.setBounds(paikka.x, paikka.y, hahmo.leveys, hahmo.korkeus);
+            this.add(hahmo);
         }
     }
 }
