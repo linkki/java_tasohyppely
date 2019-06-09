@@ -6,6 +6,8 @@
 package tasohyppelymalli;
 
 import java.awt.Color;
+import java.awt.Point;
+import java.util.HashMap;
 import javax.swing.JPanel;
 
 /**
@@ -13,11 +15,13 @@ import javax.swing.JPanel;
  * @author Cherubi
  */
 public class Pelialue extends JPanel {
-    
+    private HashMap<Hahmo, Point> hahmolista;
     
     public Pelialue() {
         this.setLayout(null);
         this.setBackground(new Color(120, 180, 250));
+        
+        this.hahmolista = new HashMap<Hahmo, Point>();
     }
     
 }
