@@ -14,6 +14,7 @@ import java.util.HashMap;
  */
 public class Pelaaja extends Hahmo {
     private HashMap<Hahmo, Point> hahmot;
+    private HashMap<String, Boolean> nappaimet;
     
     public Pelaaja(HashMap<Hahmo, Point> hahmot) {
         super("Pelihahmo.png");
