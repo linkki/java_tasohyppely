@@ -23,6 +23,7 @@ public class Pelialue extends JPanel {
         this.setBackground(new Color(120, 180, 250));
         
         this.hahmolista = new HashMap<Hahmo, Point>();
+        alustaKentta();
     }
     
     private void alustaKentta() {
