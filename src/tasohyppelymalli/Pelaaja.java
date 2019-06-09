@@ -7,6 +7,8 @@ package tasohyppelymalli;
 
 import java.awt.Point;
 import java.util.HashMap;
+import javax.swing.ActionMap;
+import javax.swing.InputMap;
 
 /**
  *
@@ -30,5 +32,8 @@ public class Pelaaja extends Hahmo {
         this.nappaimet.put("oikealle", false);
         this.nappaimet.put("vasemmalle", false);
         this.nappaimet.put("ylös", false);
+        
+        InputMap syy = getInputMap(WHEN_IN_FOCUSED_WINDOW);
+        ActionMap seuraus = getActionMap();
     }
 }
