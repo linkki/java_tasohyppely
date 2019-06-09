@@ -12,10 +12,12 @@ import java.util.HashMap;
  *
  * @author Cherubi
  */
-public class Pelaaja {
+public class Pelaaja extends Hahmo {
     private HashMap<Hahmo, Point> hahmot;
     
     public Pelaaja(HashMap<Hahmo, Point> hahmot) {
+        super("Pelihahmo.png");
+        
         this.hahmot = hahmot;
     }
 }
