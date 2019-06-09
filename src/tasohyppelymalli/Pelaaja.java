@@ -6,7 +6,10 @@
 package tasohyppelymalli;
 
 import java.awt.Point;
+import java.awt.event.ActionEvent;
 import java.util.HashMap;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
 import javax.swing.ActionMap;
 import javax.swing.InputMap;
 
@@ -35,5 +38,12 @@ public class Pelaaja extends Hahmo {
         
         InputMap syy = getInputMap(WHEN_IN_FOCUSED_WINDOW);
         ActionMap seuraus = getActionMap();
+        
+        Action oikeallePainallus = new AbstractAction() {
+            public void actionPerformed(ActionEvent ae) {
+                nappaimet.put("oikealle", true);
+                System.out.println("Nuoli oikealle pohjassa");
+            }
+        };
     }
 }
