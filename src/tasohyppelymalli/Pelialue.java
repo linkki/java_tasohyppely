@@ -25,6 +25,11 @@ public class Pelialue extends JPanel {
     }
     
     private void alustaKentta() {
-        
+        String kentta = "";
+        kentta += "iiiiiiii" + "\n";
+        kentta += "iiiiiiii" + "\n";
+        kentta += "imipimii" + "\n";
+        kentta += "iimmmiii" + "\n";
+        kentta += "iiiiiiii" + "\n";
     }
 }
