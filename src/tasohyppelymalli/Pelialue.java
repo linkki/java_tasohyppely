@@ -47,7 +47,7 @@ public class Pelialue extends JPanel {
                     hahmolista.put(new Maapala(), new Point(x, y));
                 }
                 if (c == 'p') {
-                    
+                    hahmolista.put(this.pelaaja, new Point(x, y));
                 }
                 
                 x += 50; //hahmojen leveys
