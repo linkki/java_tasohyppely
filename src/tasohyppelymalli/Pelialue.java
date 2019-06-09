@@ -18,12 +18,14 @@ import javax.swing.JPanel;
  */
 public class Pelialue extends JPanel {
     private HashMap<Hahmo, Point> hahmolista;
+    private Pelaaja pelaaja;
     
     public Pelialue() {
         this.setLayout(null);
         this.setBackground(new Color(120, 180, 250));
         
         this.hahmolista = new HashMap<Hahmo, Point>();
+        this.pelaaja = new Pelaaja(this.hahmolista);
         alustaKentta();
     }
     
