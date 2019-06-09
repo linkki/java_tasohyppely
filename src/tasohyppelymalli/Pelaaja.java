@@ -12,6 +12,7 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ActionMap;
 import javax.swing.InputMap;
+import javax.swing.KeyStroke;
 
 /**
  *
@@ -45,5 +46,7 @@ public class Pelaaja extends Hahmo {
                 System.out.println("Nuoli oikealle pohjassa");
             }
         };
+        syy.put(KeyStroke.getKeyStroke("RIGHT"), "oikealle");
+        seuraus.put("oikealle", oikeallePainallus);
     }
 }
