@@ -25,6 +25,10 @@ public class Pelaaja extends Hahmo {
     }
     
     private void listaaNappaimetJaSeuraukset() {
+        this.nappaimet = new HashMap<String, Boolean>();
         
+        this.nappaimet.put("oikealle", false);
+        this.nappaimet.put("vasemmalle", false);
+        this.nappaimet.put("ylös", false);
     }
 }
