@@ -5,10 +5,17 @@
  */
 package tasohyppelymalli;
 
+import java.awt.Point;
+import java.util.HashMap;
+
 /**
  *
  * @author Cherubi
  */
 public class Pelaaja {
+    private HashMap<Hahmo, Point> hahmot;
     
+    public Pelaaja(HashMap<Hahmo, Point> hahmot) {
+        this.hahmot = hahmot;
+    }
 }
