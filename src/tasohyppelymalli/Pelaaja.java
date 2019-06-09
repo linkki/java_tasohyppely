@@ -19,5 +19,11 @@ public class Pelaaja extends Hahmo {
         super("Pelihahmo.png");
         
         this.hahmot = hahmot;
+        
+        listaaNappaimetJaSeuraukset();
+    }
+    
+    private void listaaNappaimetJaSeuraukset() {
+        
     }
 }
