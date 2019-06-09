@@ -8,6 +8,8 @@ package tasohyppelymalli;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Scanner;
 import javax.swing.JPanel;
@@ -16,7 +18,7 @@ import javax.swing.JPanel;
  *
  * @author Cherubi
  */
-public class Pelialue extends JPanel {
+public class Pelialue extends JPanel implements ActionListener {
     private HashMap<Hahmo, Point> hahmolista;
     private Pelaaja pelaaja;
     
@@ -66,5 +68,10 @@ public class Pelialue extends JPanel {
             hahmo.setBounds(paikka.x, paikka.y, hahmo.leveys, hahmo.korkeus);
             this.add(hahmo);
         }
+    }
+    
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        
     }
 }

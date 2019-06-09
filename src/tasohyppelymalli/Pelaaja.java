@@ -43,7 +43,6 @@ public class Pelaaja extends Hahmo {
         Action oikeallePainallus = new AbstractAction() {
             public void actionPerformed(ActionEvent ae) {
                 nappaimet.put("oikealle", true);
-                System.out.println("Nuoli oikealle pohjassa");
             }
         };
         syy.put(KeyStroke.getKeyStroke("RIGHT"), "oikealle");
